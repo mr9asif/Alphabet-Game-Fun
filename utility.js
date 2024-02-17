@@ -16,8 +16,19 @@ function gerRandomAlphabets(){
     const randomAlphabets = alphabets[randomNumber];
     return randomAlphabets 
 }
+// set text element by Id
+function setTextelementById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
+
 // set background key
 function setBackgroundColor(elementId){
+   const allButton =  document.querySelectorAll('.kbd')
+   for(const item of allButton){
+    item.classList.remove('bg-orange-400');
+   }
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400');
     element.classList.add('text-white')
@@ -54,6 +65,7 @@ function userkeypressAlphabet(event){
      console.log('present alpha ', presentAlphabet);
 
     //  set match or not
+    
     if(userpress === presentAlphabet){
         // -----usning function-----
         const currentValue = getTextValueElement('current-score');
