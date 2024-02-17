@@ -12,6 +12,11 @@ function contineuGame(){
 
 function play(){
     getHide('home-screen');
+    getHide('final-score')
     getshow('play-ground');
     contineuGame();
+}
+function gameOver(){
+    getHide('play-ground');
+    getshow('final-score');
 }

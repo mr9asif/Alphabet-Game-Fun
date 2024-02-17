@@ -76,7 +76,7 @@
                   
                     <div class="flex justify-between w-full mt-3">
                         <div class="life flex gap-2 border-2 p-2 rounded-md bg-red-300">
-                            <p class="text-2xl text-black">Life</p><img   src="./Group 23.png" alt=""><p class="text-2xl text-black">1</p>
+                            <p class="text-2xl text-black">Life</p><img   src="./Group 23.png" alt=""><p id="current-life" class="text-2xl text-black">5</p>
                         </div>
                         <div class="life flex gap-2 border-2 p-2 rounded-md bg-red-300">
                             <p class="text-2xl text-black">Score</p><img  src="./monetization_on.svg" alt=""><p id="current-score" class="text-2xl text-black">0</p>
@@ -84,10 +84,11 @@
                     </div>
              </div>
                 <!-- result score -->
-                <div class="score border p-8 rounded-lg bg-neutral-400 flex flex-col justify-center items-center gap-3 hidden">
-                    <h1 class="text-[30px] text-[white]">Score : 14</h1>
-                    <div class="btn">Play Again</div>
-                    <p class="text-[12px] text-[white]">Practice will make you Pro</p>
+                <div id="final-score" class="h-[500px] w-[500px] score border p-8 rounded-lg bg-neutral-400 flex flex-col justify-center items-center gap-3 hidden">
+                    <h1 class="text-[50px] text-red-800 font-bold">Game Over !!</h1>
+                    <h1 class="text-[30px] text-[yellow]">Score : 14</h1>
+                    <div onclick="play()" class="btn">Play Again</div>
+                    <p class="text-[22px] text-[orange]"> Practice will make you Pro ! </p>
                 </div>
               
         </div>
